@@ -1,5 +1,3 @@
-import numpy as np
-
 from flask import Flask
 
 app = Flask(__name__)
@@ -11,4 +9,4 @@ def hello():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=4000)
