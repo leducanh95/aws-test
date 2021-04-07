@@ -1,9 +1,14 @@
 import numpy as np
 
+from flask import Flask
 
-def main():
-    print('hello word')
+app = Flask(__name__)
+
+
+@app.route('/')
+def hello():
+    return "Hello World!"
 
 
 if __name__ == '__main__':
-    main()
+    app.run()
